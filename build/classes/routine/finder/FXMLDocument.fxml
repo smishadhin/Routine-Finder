@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="routine.finder.FXMLDocumentController">
+    <children>
+        <Button fx:id="Browsebutton" layoutX="153.0" layoutY="179.0" onAction="#studentFileChooser" prefHeight="43.0" prefWidth="153.0" text="Browse Routine File" />
+      <Label fx:id="studentFileStatusLable" layoutX="328.0" layoutY="179.0" prefHeight="43.0" prefWidth="278.0" text="no file is choosed">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button fx:id="genertButton" layoutX="243.0" layoutY="266.0" mnemonicParsing="false" onAction="#generate" prefHeight="51.0" prefWidth="170.0" text="Generate New Routine" />
+      <Label layoutX="204.0" layoutY="14.0" prefHeight="132.0" prefWidth="248.0" text="Daffodil International University&#10;Permanent Campus&#10;Asulia,Savar,Dhaka&#10;&#10;&#10;Admin Panel For Routine Finder" textAlignment="CENTER" textFill="#09509e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="75.0" layoutY="333.0" prefHeight="132.0" prefWidth="506.0" text="Please Wait.....&#10;Routine is Uploading...&#10;It may take Few minutes for uploading process" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressbar" layoutX="81.0" layoutY="472.0" prefHeight="20.0" prefWidth="489.0" progress="0.0" />
+    </children>
+</AnchorPane>
